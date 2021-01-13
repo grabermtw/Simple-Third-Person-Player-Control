@@ -3,9 +3,14 @@
 This package will give you everything you need for a basic third-person character controller that allows for independent camera rotation. It has built-in support for both keyboard/mouse control and gamepad control. It can also be used for splitscreen multiplayer if you add a [PlayerInputManager](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/api/UnityEngine.InputSystem.PlayerInputManager.html) in your scene somewhere.
 
 ## Initial Set-Up
-1. Import [the package](https://github.com/grabermtw/Simple-Third-Person-Player-Control/releases/tag/v1.0.0) (Assets->Import Package->Custom Package).
-2. This player controller uses the [new Unity Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/). By default, this will disable the classic input system, but it is easy to tell Unity to use both. To do this, go to Edit->Project Settings->Player, then under "Other Settings" find "Active Input Handling" beneath "Configuration" and set that to "Both." This will allow you to use the traditional input system (for example, "Input.GetKey()") in addition to the new input system that this third person player controller uses.
-3. The package will give you a prefab called ThirdPersonPlayer. You should be able to drag this directly into your scene and have a fully functioning third person player.
+1. This player controller uses the [new Unity Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/). Before importing the Third Person Player Control package, you need to import the new Unity Input System package.
+    1. Go to Window->Package Manager.
+    2. In the Package Manager, set the "Packages: " tab at the top to "Packages: Unity Registry."
+    3. Locate the package called "Input System" and click "Install."
+    4. A warning will appear asking you if you would like to enable the new backends. Click "No," as we will do this ourselves without disabling the old backends in the next step.
+    5. We are going to tell Unity to use both input backends. To do this, go to Edit->Project Settings->Player, then under "Other Settings" find "Active Input Handling" beneath "Configuration" and set its value to "Both." This will allow you to use the traditional input system (for example, "Input.GetKey()") in addition to the new input system that this third person player controller uses.
+3. Import [the package](https://github.com/grabermtw/Simple-Third-Person-Player-Control/releases/tag/v1.0.0) (Assets->Import Package->Custom Package).
+4. The package will give you a prefab called ThirdPersonPlayer. You should be able to drag this directly into your scene and have a fully functioning third person player.
 
 ## Replacing the Default Character
 It is easy to replace the default character in the ThirdPersonPlayer prefab assuming you have a character to replace it with that is structured similarly (the default character was created with Adobe Fuse, rigged with Mixamo, then imported into Unity with [this script](https://forum.unity.com/threads/script-for-importing-adobe-fuse-character-model-into-unity-fixes-materials.482093/)).
