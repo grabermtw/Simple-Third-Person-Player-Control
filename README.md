@@ -7,6 +7,7 @@
 
 ## Replacing the Default Character
 It is easy to replace the default character in the ThirdPersonPlayer prefab assuming you have a character to replace it with that is structured similarly (the default character was created with Adobe Fuse, rigged with Mixamo, then imported into Unity with [this script](https://forum.unity.com/threads/script-for-importing-adobe-fuse-character-model-into-unity-fixes-materials.482093/)).
+
 _If your character was originally created for [Second Floor Smash](https://github.com/grabermtw/Second-Floor-Smash), then this will be easy._
 
 1. Open the ThirdPersonPlayer prefab.
