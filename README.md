@@ -2,7 +2,7 @@
 
 This package will give you everything you need for a basic third-person character controller that allows for independent camera rotation. It has built-in support for both keyboard/mouse control and gamepad control. It can also be used for splitscreen multiplayer if you add a [PlayerInputManager](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/api/UnityEngine.InputSystem.PlayerInputManager.html) in your scene somewhere.
 
-This third person controller is a simplified version of the one used in [Polyathlon](https://github.com/mvorsteg/Polyathlon).
+This third person controller is a simplified version of the one used in [Polyathlon](https://github.com/mvorsteg/Polyathlon), mostly created originally by [Matt Vorsteg](https://github.com/mvorsteg).
 
 ## Initial Set-Up
 1. This player controller uses the [new Unity Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/). Before importing the Third Person Player Control package, you need to import the new Unity Input System package.
