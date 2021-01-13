@@ -5,7 +5,7 @@
 2. This player controller uses the [new Unity Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/). By default, this will disable the classic input system, but it is easy to tell Unity to use both. To do this, go to Edit->Project Settings->Player, then under "Other Settings" find "Active Input Handling" beneath "Configuration" and set that to "Both." This will allow you to use the traditional input system (for example, "Input.GetKey()") in addition to the new input system that this third person player controller uses.
 3. The package will give you a prefab called ThirdPersonPlayer. You should be able to drag this directly into your scene and have a fully functioning third person player.
 
-## Replacing the Character
+## Replacing the Default Character
 It is easy to replace the default character in the ThirdPersonPlayer prefab assuming you have a character to replace it with that is structured similarly (the default character was created with Adobe Fuse, rigged with Mixamo, then imported into Unity with [this script](https://forum.unity.com/threads/script-for-importing-adobe-fuse-character-model-into-unity-fixes-materials.482093/)).
 1. Open the ThirdPersonPlayer prefab.
 2. Delete the character prefab that's currently a child of the ThirdPersonPlayer prefab (if you just imported the package, then it will be called "anders").
